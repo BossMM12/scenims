@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sass": "sass scss:dist --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.93.3"
+  }
+}
