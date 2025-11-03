@@ -1,7 +1,7 @@
 @import 'config';
 @import 'utilities';
-@import 'media';
 @import 'item_grid';
+@import 'media';
 
 // General styles;
 * {
@@ -66,7 +66,6 @@ img {
 #header {
     &-home {
         background: $bg-image no-repeat center right / cover;
-        height: 100vh;
         color: #fff;
 
 
@@ -87,7 +86,7 @@ img {
 // Header Inner
   &-inner {
      background: $bg-image no-repeat 20% 30% / cover;
-        height: 5.5rem;
+        height: 7rem;
      border-bottom: 3px solid $main-color;
     }
 }
@@ -97,11 +96,22 @@ img {
 #home {
   // Home Section A
   &-a {
+    .home-content{
+      text-align: center;
+      padding-top: -2rem;
+      padding-bottom: 2rem;
+      justify-content: center;
+
+      h1 {
+        font-size: 3rem;
+        line-height: 1;
+      }
+    }
     .specials {
       margin-top: 3rem;
       display: grid;
       grid-gap: 1rem;
-      grid-template-columns: repeat(4, 1fr);
+      
 
       .fas {
         color: $main-color;
@@ -147,7 +157,7 @@ img {
   &-c {
     .process {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      
       grid-gap: 1.5rem;
       text-align: center;
 
@@ -205,9 +215,6 @@ img {
   &-a {
     .about-info {
       display: grid;
-      grid-template-areas:
-        'bioimage bio bio'
-        'aw1 aw2 aw3';
       grid-gap: 1.2rem;
     }
 
@@ -306,10 +313,7 @@ img {
   &-a {
     .text-fields {
       display: grid;
-      grid-template-areas:
-        'name email'
-        'subject phone'
-        'message message';
+      
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -344,7 +348,7 @@ img {
   &-b {
     .contact-info {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      
       text-align: center;
     }
   }
